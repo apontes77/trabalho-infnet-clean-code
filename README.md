@@ -6,6 +6,9 @@ SOLID e das técnicas e práticas recomendadas por Robert C. Martin, chamadas de
 ## 🔨 Funcionalidades do projeto
 
 A ideia é desenvolver uma API REST que retorne informações sobre livros, como se fosse uma biblioteca.
+Eis o modelo de domínio:
+
+![Imagem 1](src/main/resources/class.jpg)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
