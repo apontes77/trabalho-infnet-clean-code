@@ -13,6 +13,7 @@ Criar um projeto que simule uma empresa ACME. Essa empresa deve ter a entidade F
 * Salário
 * Setor
 * Cargo
+
 Neste projeto, vamos adicionar uma entidade chamada funcionário terceirizado. As propriedades desse funcionário são as seguintes:
 
 * Nome
