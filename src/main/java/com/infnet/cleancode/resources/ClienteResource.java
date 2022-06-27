@@ -1,7 +1,7 @@
 package com.infnet.cleancode.resources;
 
 import com.infnet.cleancode.domain.Cliente;
-import com.infnet.cleancode.services.ClienteService;
+import com.infnet.cleancode.services.implementations.ClienteServiceImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/clientes")
 public class ClienteResource {
-	private ClienteService service;
+	private final ClienteServiceImpl service;
 
-	public ClienteResource(ClienteService service) {
+	public ClienteResource(ClienteServiceImpl service) {
 		this.service = service;
 	}
 

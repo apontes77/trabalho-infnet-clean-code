@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {
-	private ClienteRepository clienteRepository;
+	private final ClienteRepository clienteRepository;
 
 	public ClienteServiceImpl(ClienteRepository clienteRepository) {
 		this.clienteRepository = clienteRepository;

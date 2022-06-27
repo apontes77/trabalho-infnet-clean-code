@@ -1,7 +1,7 @@
 package com.infnet.cleancode.resources;
 
 import com.infnet.cleancode.domain.Pedido;
-import com.infnet.cleancode.services.PedidoService;
+import com.infnet.cleancode.services.implementations.PedidoServiceImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/pedidos")
 public class PedidoResource {
 	
-	private PedidoService service;
+	private final PedidoServiceImpl service;
 
-	public PedidoResource(PedidoService service) {
+	public PedidoResource(PedidoServiceImpl service) {
 		this.service = service;
 	}
 

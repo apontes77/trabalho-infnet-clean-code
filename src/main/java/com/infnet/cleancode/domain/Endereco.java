@@ -45,7 +45,7 @@ public class Endereco implements Serializable {
 		this.bairro = bairro;
 		this.cep = cep;
 		this.cliente = cliente;
-		this.setCidade(cidade);
+		this.associaCidadeAoEndereco(cidade);
 	}
 
 	public Integer getId() {
@@ -80,7 +80,7 @@ public class Endereco implements Serializable {
 		return cidade;
 	}
 
-	public void setCidade(Cidade cidade) {
+	public void associaCidadeAoEndereco(Cidade cidade) {
 		this.cidade = cidade;
 	}
 

@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @Service
 public class PedidoServiceImpl implements PedidoService {
-	private PedidoRepository pedidoRepository;
+	private final PedidoRepository pedidoRepository;
 
 	public PedidoServiceImpl(PedidoRepository repo) {
 		this.pedidoRepository = repo;
