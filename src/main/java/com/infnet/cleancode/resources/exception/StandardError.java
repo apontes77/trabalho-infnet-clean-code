@@ -3,18 +3,15 @@ package com.infnet.cleancode.resources.exception;
 import java.io.Serializable;
 
 public class StandardError implements Serializable {
-	/**
-		 * 
-		 */
 	private static final long serialVersionUID = 1L;
 	private Integer status;
-	private String msg;
+	private String message;
 	private Long timeStamp;
 
 	public StandardError(Integer status, String msg, Long timeStamp) {
 		super();
 		this.status = status;
-		this.msg = msg;
+		this.message = msg;
 		this.timeStamp = timeStamp;
 	}
 
@@ -26,12 +23,12 @@ public class StandardError implements Serializable {
 		this.status = status;
 	}
 
-	public String getMsg() {
-		return msg;
+	public String getMessage() {
+		return message;
 	}
 
-	public void setMsg(String msg) {
-		this.msg = msg;
+	public void setMessage(String message) {
+		this.message = message;
 	}
 
 	public Long getTimeStamp() {
