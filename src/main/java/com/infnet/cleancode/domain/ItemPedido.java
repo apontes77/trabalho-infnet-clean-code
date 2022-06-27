@@ -18,8 +18,7 @@ public class ItemPedido implements Serializable{
 	private Integer quantidade;
 	private Double preco;
 
-	public ItemPedido() {
-	}
+	public ItemPedido() {}
 
 	public ItemPedido(Pedido pedido, Produto produto, Double desconto, Integer quantidade, Double preco) {
 		id.setPedido(pedido);
@@ -50,18 +49,6 @@ public class ItemPedido implements Serializable{
 		return preco;
 	}
 
-	public void setDesconto(Double desconto) {
-		this.desconto = desconto;
-	}
-
-	public void setQuantidade(Integer quantidade) {
-		this.quantidade = quantidade;
-	}
-
-	public void setPreco(Double preco) {
-		this.preco = preco;
-	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -86,7 +73,5 @@ public class ItemPedido implements Serializable{
 			return false;
 		return true;
 	}
-	
-	
 
 }

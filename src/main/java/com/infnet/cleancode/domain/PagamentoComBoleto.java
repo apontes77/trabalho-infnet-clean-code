@@ -16,16 +16,13 @@ public class PagamentoComBoleto extends Pagamento {
 	@JsonFormat(pattern="dd/MM/yyyy")
 	private Date dataPagamento;
 
-	public PagamentoComBoleto() {
-
-	}
+	public PagamentoComBoleto() {}
 
 	public PagamentoComBoleto(Integer id, EstadoPagamento estado, Pedido pedido, Date dataVencimento,
 							  Date dataPagamento) {
 		super(id, estado, pedido);
 		this.dataPagamento = dataPagamento;
 		this.dataVencimento = dataVencimento;
-
 	}
 
 	public Date getDataVencimento() {
@@ -34,14 +31,6 @@ public class PagamentoComBoleto extends Pagamento {
 
 	public Date getDataPagamento() {
 		return dataPagamento;
-	}
-
-	public void setDataVencimento(Date dataVencimento) {
-		this.dataVencimento = dataVencimento;
-	}
-
-	public void setDataPagamento(Date dataPagamento) {
-		this.dataPagamento = dataPagamento;
 	}
 
 }

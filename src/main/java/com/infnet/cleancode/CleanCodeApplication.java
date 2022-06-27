@@ -91,8 +91,8 @@ public class CleanCodeApplication implements CommandLineRunner {
 		estadoRepository.saveAll(Arrays.asList(est1,est2));
 		cidadeRepository.saveAll(Arrays.asList(c1,c2,c3));
 
-		Cliente cli1 = new Cliente(null, "Maria Silva", "maria@gmail.com", "03633809147", TipoCliente.PESSOAFISICA);
-		cli1.getTelefones().addAll(Arrays.asList("996143607", "996143604"));
+		Cliente cli1 = new Cliente(null, "Mary Jane", "mary@gmail.com", "50152294104", TipoCliente.PESSOAFISICA);
+		cli1.getTelefones().addAll(Arrays.asList("(94) 96947-1453", "(94) 96947-1454"));
 
 		Endereco e1 = new Endereco(null, "Rua Flores", "300", "Apto 303", "Jardim", "74936380", cli1, c1);
 		Endereco e2 = new Endereco(null, "Avenida Matos", "105", "sala 800", "Centro", "74000000", cli1, c2);
@@ -130,10 +130,7 @@ public class CleanCodeApplication implements CommandLineRunner {
 		p3.getItens().addAll(Arrays.asList(ip2));
 
 		itemPedidoRepository.saveAll(Arrays.asList(ip1,ip2,ip3));
-
-
 	}
-
 
 	public static void main(String[] args) {
 		SpringApplication.run(CleanCodeApplication.class, args);
