@@ -32,7 +32,9 @@ O domínio dos cargos é o seguinte:
 
 ESTAGIÁRIO, JÚNIOR, PLENO, SÊNIOR.
 
-Deve ser implementado um método que será usado pelo RH para dar reajuste para os funcionários da empresa ACME. As regras de reajuste utilizadas na empresa não se aplicam a empresas terceirizadas e seu código deve prever isso. O aluno deve mostrar onde foi possível aplicar os conceitos de Solid.
+Deve ser implementado um método que será usado pelo RH para dar reajuste para os funcionários da empresa ACME. 
+As regras de reajuste utilizadas na empresa não se aplicam a empresas terceirizadas e seu código deve prever isso. 
+O aluno deve mostrar onde foi possível aplicar os conceitos de Solid.
 
 Obs: Esse projeto deve ser o mais simples possível, não precisando ser implementadas interfaces e banco de dados.
 
